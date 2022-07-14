@@ -1,0 +1,12 @@
+name: 'slack action'
+description: 'Send a message to a Slack channel'
+inputs:
+  payload:
+    description: 'message payload'
+    required: true
+  token:
+    description: 'Slack bot token'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
