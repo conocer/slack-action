@@ -8,12 +8,12 @@
     "package": "ncc build --source-map"
   },
   "dependencies": {
-    "@actions/core": "^1.9.0",
-    "@actions/exec": "^1.1.1"
+    "@actions/core": "^3.0.0",
+    "@actions/exec": "^3.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.5",
+    "@types/node": "^24.0.0",
     "@vercel/ncc": "^0.34.0",
-    "typescript": "^4.7.4"
+    "typescript": "^5.8.0"
   }
 }
