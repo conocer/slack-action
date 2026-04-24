@@ -3452,7 +3452,7 @@ const exec_1 = __nccwpck_require3_(514);
 const main = () => {
     const payload = (0, core_1.getInput)('payload');
     const token = (0, core_1.getInput)('token');
-    (0, exec_1.exec)('curl', ['-X', 'POST', '-H', 'Content-type: application/json', '-H', `Authorization: Bearer ${token}`, '-d', payload, 'https://slack.com/api/chat.postMessage']);
+    (0, exec_1.exec)(`curl -X POST -H "Content-type: application/json" -H "Authorization: Bearer ${token}" -d "${payload}" https://slack.com/api/chat.postMessage`);
 };
 process.on('unhandledRejection', (err) => {
     console.error(err);
